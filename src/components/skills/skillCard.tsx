@@ -1,5 +1,5 @@
 import { useState } from "react";
-import classes from "./SkillCard.module.css";
+import classes from "./skillCard.module.css";
 
 interface SkillCardProps {
   title: string;
