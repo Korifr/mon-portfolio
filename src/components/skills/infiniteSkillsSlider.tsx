@@ -7,7 +7,7 @@ import reactLogo from "../../assets/img/react.png";
 import vueJsLogo from "../../assets/img/vue-js.png";
 import javaLogo from "../../assets/img/java.png";
 import springbootLogo from "../../assets/img/springboot.png";
-import postgreSQLLogo from "../../assets/img/postgresql.png";
+import postgreSQLLogo from "../../assets/img/postgre-sql.png";
 import classes from "./infiniteSkillsSlider.module.css";
 
 export function InfiniteSkillsSlider() {
