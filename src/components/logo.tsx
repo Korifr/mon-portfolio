@@ -1,4 +1,4 @@
-import logoFs from '../assets/img/logo.png';
+import logoFs from '/assets/img/logo.png';
 
 interface logoFsProps {
   type?: string;
