@@ -35,7 +35,7 @@ const projects: Project[] = [
     title: "FoodlyShare",
     description: "Application web avec React & Spring Boot. Plateforme de partage de recettes permettant de créer, illustrer et découvrir des plats du monde entier",
     logo: "/src/assets/img/logoFs.png",
-    image: "/src/assets/img/foodlyshare.png",
+    image: "/public/assets/foodlyshare.png",
     buttonText: "Voir le projet",
     buttonLink: "https://github.com/FoodlyShare/FoodlyShare",
     tags: [TagsData[1]],
