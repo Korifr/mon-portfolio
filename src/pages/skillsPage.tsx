@@ -32,17 +32,17 @@ export function SkillsPage({onSectionChange}: SkillsPageProps) {
                 <div className="flex flex-wrap justify-center items-center gap-8 mt-8">
                     <SkillCard
                     title="Frontend"
-                    iconSrc="/src/assets/img/front-end.png"
+                    iconSrc="/assets/img/front-end.png"
                     knowledge={["HTML5/CSS3", "JavaScript/TypeScript", "React", "Vue.js"]}
                     />
                     <SkillCard
                     title="Backend"
-                    iconSrc="/src/assets/img/back-end.png"
+                    iconSrc="/assets/img/back-end.png"
                     knowledge={["Java", "Springboot", "Node.js", "SQL"]}
                     />
                     <SkillCard
                     title="Database"
-                    iconSrc="/src/assets/img/database.png"
+                    iconSrc="/assets/img/database.png"
                     knowledge={["MongoDB", "MySQL", "PostgreSQL"]}
                     />
                 </div>
@@ -50,17 +50,17 @@ export function SkillsPage({onSectionChange}: SkillsPageProps) {
                 <div className="flex flex-col h-screen w-full justify-center items-center">
                     <SkillCardMobile
                     title="Frontend"
-                    iconSrc="/src/assets/img/front-end.png"
+                    iconSrc="/assets/img/front-end.png"
                     knowledge={["HTML5/CSS3", "JavaScript/TypeScript", "React", "Vue.js"]}
                     />
                     <SkillCardMobile
                     title="Backend"
-                    iconSrc="/src/assets/img/back-end.png"
+                    iconSrc="/assets/img/back-end.png"
                     knowledge={["Java", "Springboot", "Node.js", "SQL"]}
                     />
                     <SkillCardMobile
                     title="Database"
-                    iconSrc="/src/assets/img/database.png"
+                    iconSrc="/assets/img/database.png"
                     knowledge={["MongoDB", "MySQL", "PostgreSQL"]}
                     />
                 </div>
@@ -70,7 +70,7 @@ export function SkillsPage({onSectionChange}: SkillsPageProps) {
             <div className="flex justify-center mt-10">
 
                 <a
-                href="/public/assets/cv.pdf" // chemin vers ton PDF dans public
+                href="/assets/cv.pdf" // chemin vers ton PDF dans public
                 download
                 className="relative inline-block px-6 py-3 font-semibold text-white rounded-lg overflow-hidden group border-2 border-white
                             transition-all duration-300"
