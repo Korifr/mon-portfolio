@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optionnel : styles globaux */
+body {
+  font-family: system-ui, sans-serif;
+}
+.stroke-text {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+@font-face {
+  font-family: 'Horizon';
+  src: url('./assets/fonts/Horizon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,83 @@
+.sliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: transparent;
+  /* 🔽 Réduction drastique du padding vertical */
+  padding: 1rem 0;
+  height: 30%;
+}
+
+.slider {
+  position: relative;
+  width: 70%;
+  max-width: 900px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.trackWrapper {
+  display: flex;
+  width: 200%; /* deux tracks côte à côte pour loop fluide */
+}
+
+.track {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Fondu transparent sur les côtés */
+.fade {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.fadeLeft {
+  left: 0;
+  background: linear-gradient(to right, rgb(2, 2, 2), transparent);
+}
+
+.fadeRight {
+  right: 0;
+  background: linear-gradient(to left, rgb(0, 0, 0), transparent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider {
+    width: 90%;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,86 @@
+.skillCard {
+  position: relative;
+  width: 15em;
+  background-color: #000000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 8px;
+  border: white 2px solid;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+  overflow: hidden;
+}
+
+.skillCard:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.header {
+  position: relative;
+  background-color: white; /* ou une couleur selon la compétence */
+  height: 170px;
+  margin: -20px -20px 20px -20px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.skillCard:hover .header {
+  height: 40px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 128px;
+  height: 128px;
+  transition: transform 0.5s;
+}
+
+.skillCard:hover .icon {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+.body {
+  height: 40px;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
+.body.expanded {
+  height: 170px; /* ou une hauteur qui permet de tout voir */
+}
+
+.title {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  margin-left: 10px;
+  color: white;
+}
+
+.duration {
+  color: white;
+  font-style: italic;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.knowledge {
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.knowledge li {
+  margin-top: 5px;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+
+/* Animation des items knowledge lors du hover */
+.body.expanded .knowledge li {
+  transform: translateX(0);
+}
