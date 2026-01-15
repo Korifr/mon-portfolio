@@ -1,6 +1,6 @@
 import { useState } from "react";
 import contactImage from "../assets/img/Design sans titre.png";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import bgImage from "../assets/img/home.png";
 import classes from "./contact.module.css";
 
